@@ -1,19 +1,18 @@
+from sensor.configuration.mongo_db_connection import MongoDBClient
 from sensor.exception  import SensorException
 import os,sys
 from sensor.logger import logging
+from sensor.pipeline.training_pipeline import TrainPipeline
 
 
-def test_exception():
-    try:
-        logging.info("This message is : We are dividing 1 by 0")
-        x = 1/0
-    except Exception as e:
-        raise SensorException(e,sys)
+
     
 
 if __name__=='__main__':
-    try:
-        test_exception()
-    except Exception as e:
-        print(e)
+    train_pipeline=TrainPipeline()
+    #print(train_pipeline.data_ingestion_config.__dict__)
+    train_pipeline.run_pipeline()
+    
+
+
     

@@ -130,3 +130,5 @@ dmypy.json
 
 # virtual env
 /sen-env
+
+artifact/*
