@@ -132,3 +132,6 @@ dmypy.json
 /sen-env
 
 artifact/*
+
+sensor/configuration/mongo_db_connection.py
+
