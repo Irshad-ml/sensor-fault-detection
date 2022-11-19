@@ -53,7 +53,7 @@ class DataIngestion:
         
     def split_data_as_train_test(self,dataframe:DataFrame):
         """
-          This function will split the feature_store dataset into train and test file
+          This function will split the feature_store dataset into train and  test file
         
         """
         try:
