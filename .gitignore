@@ -133,5 +133,6 @@ dmypy.json
 
 artifact/*
 
-sensor/configuration/mongo_db_connection.py
+sensor/configuration/*
+saved_models/*
 
